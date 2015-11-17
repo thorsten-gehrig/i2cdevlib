@@ -56,7 +56,7 @@ class IAQ2000 {
 
     private:
         uint8_t devAddr;
-        uint8_t buffer[8];
+        uint8_t buffer[9];
     
         int8_t readAllBytes(uint8_t devAddr, uint8_t length, uint8_t *data, uint16_t timeout=I2Cdev::readTimeout);
 };
